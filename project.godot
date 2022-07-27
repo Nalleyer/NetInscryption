@@ -15,12 +15,18 @@ _global_script_classes=[ {
 "path": "res://Card.gd"
 }, {
 "base": "Resource",
+"class": "CardResource",
+"language": "GDScript",
+"path": "res://CardResource.gd"
+}, {
+"base": "Resource",
 "class": "Mark",
 "language": "GDScript",
 "path": "res://mark/Mark.gd"
 } ]
 _global_script_class_icons={
 "Card": "",
+"CardResource": "",
 "Mark": ""
 }
 

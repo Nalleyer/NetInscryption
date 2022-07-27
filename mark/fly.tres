@@ -10,3 +10,5 @@ func on_to_hand(owner: Card):
 
 [resource]
 script = SubResource( 1 )
+is_visible = true
+name = "飞行"
