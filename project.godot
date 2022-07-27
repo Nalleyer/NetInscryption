@@ -8,11 +8,32 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Control",
+"class": "Card",
+"language": "GDScript",
+"path": "res://Card.gd"
+}, {
+"base": "Resource",
+"class": "Mark",
+"language": "GDScript",
+"path": "res://mark/Mark.gd"
+} ]
+_global_script_class_icons={
+"Card": "",
+"Mark": ""
+}
+
 [application]
 
 config/name="NetInscryption"
 run/main_scene="res://NetTest.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
 
 [physics]
 
