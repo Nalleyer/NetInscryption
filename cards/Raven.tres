@@ -9,4 +9,4 @@ name = "渡鸦"
 marks = [ ExtResource( 2 ) ]
 cost = 2
 attack = 2
-hp = 1
+hp = 3
