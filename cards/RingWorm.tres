@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://cards/CardResource.gd" type="Script" id=1]
+[ext_resource path="res://mark/poisonous.tres" type="Resource" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = "环形虫"
+marks = [  ]
+hidden_marks = [ ExtResource( 2 ) ]
+cost = 1
+attack = 0
+hp = 1

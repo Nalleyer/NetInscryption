@@ -10,4 +10,4 @@ func on_to_hand(owner: Card):
 
 [resource]
 script = SubResource( 1 )
-name = "飞行"
+name = "毒幸存者"
