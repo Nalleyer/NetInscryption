@@ -1,0 +1,128 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://CommonFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://ui_theme.tres" type="Theme" id=2]
+
+[node name="Desk" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="DeskPanel" type="Panel" parent="."]
+margin_left = 481.0
+margin_top = 10.0
+margin_right = 1449.0
+margin_bottom = 678.0
+theme = ExtResource( 2 )
+
+[node name="DeskContainer" type="VBoxContainer" parent="DeskPanel"]
+margin_right = 968.0
+margin_bottom = 668.0
+theme = ExtResource( 2 )
+
+[node name="EnemyField" type="HBoxContainer" parent="DeskPanel/DeskContainer"]
+margin_right = 968.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 0, 332 )
+
+[node name="EnemySlot1" type="Panel" parent="DeskPanel/DeskContainer/EnemyField"]
+margin_right = 239.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 239, 0 )
+
+[node name="EnemySlot2" type="Panel" parent="DeskPanel/DeskContainer/EnemyField"]
+margin_left = 243.0
+margin_right = 482.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 239, 0 )
+
+[node name="EnemySlot3" type="Panel" parent="DeskPanel/DeskContainer/EnemyField"]
+margin_left = 486.0
+margin_right = 725.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 239, 0 )
+
+[node name="EnemySlot4" type="Panel" parent="DeskPanel/DeskContainer/EnemyField"]
+margin_left = 729.0
+margin_right = 968.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 239, 0 )
+
+[node name="MyField" type="HBoxContainer" parent="DeskPanel/DeskContainer"]
+margin_top = 336.0
+margin_right = 968.0
+margin_bottom = 668.0
+rect_min_size = Vector2( 0, 332 )
+
+[node name="MySlot1" type="Panel" parent="DeskPanel/DeskContainer/MyField"]
+margin_right = 239.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 239, 0 )
+
+[node name="MySlot2" type="Panel" parent="DeskPanel/DeskContainer/MyField"]
+margin_left = 243.0
+margin_right = 482.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 239, 0 )
+
+[node name="MySlot3" type="Panel" parent="DeskPanel/DeskContainer/MyField"]
+margin_left = 486.0
+margin_right = 725.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 239, 0 )
+
+[node name="MySlot4" type="Panel" parent="DeskPanel/DeskContainer/MyField"]
+margin_left = 729.0
+margin_right = 968.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 239, 0 )
+
+[node name="HandPanel" type="Panel" parent="."]
+margin_left = 128.0
+margin_top = 724.0
+margin_right = 1364.0
+margin_bottom = 1056.0
+theme = ExtResource( 2 )
+
+[node name="HandScrollContainer" type="ScrollContainer" parent="HandPanel"]
+margin_right = 1236.0
+margin_bottom = 332.0
+
+[node name="HandArea" type="GridContainer" parent="HandPanel/HandScrollContainer"]
+columns = 5
+
+[node name="DeckArea" type="CenterContainer" parent="."]
+margin_left = 1421.0
+margin_top = 724.0
+margin_right = 1660.0
+margin_bottom = 1056.0
+
+[node name="SquirrelArea" type="CenterContainer" parent="."]
+margin_left = 1644.0
+margin_top = 724.0
+margin_right = 1883.0
+margin_bottom = 1056.0
+
+[node name="EnemyInfo" type="VBoxContainer" parent="."]
+margin_left = 1518.0
+margin_top = 23.0
+margin_right = 1899.0
+margin_bottom = 220.0
+
+[node name="DeckCount" type="Label" parent="EnemyInfo"]
+margin_right = 381.0
+margin_bottom = 96.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+text = "卡组量：0"
+valign = 1
+
+[node name="SquirrelCount" type="Label" parent="EnemyInfo"]
+margin_top = 100.0
+margin_right = 381.0
+margin_bottom = 197.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+text = "松鼠量：0"
+valign = 1
