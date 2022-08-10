@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://CommonFont.tres" type="DynamicFont" id=1]
 [ext_resource path="res://ui_theme.tres" type="Theme" id=2]
+[ext_resource path="res://Desk.gd" type="Script" id=3]
 
 [node name="Desk" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 3 )
 
 [node name="DeskPanel" type="Panel" parent="."]
 margin_left = 481.0
@@ -96,11 +98,27 @@ margin_top = 724.0
 margin_right = 1660.0
 margin_bottom = 1056.0
 
+[node name="DeckButton" type="Button" parent="DeckArea"]
+margin_right = 239.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 239, 332 )
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 1 )
+text = "牌组：0"
+
 [node name="SquirrelArea" type="CenterContainer" parent="."]
-margin_left = 1644.0
+margin_left = 1660.0
 margin_top = 724.0
-margin_right = 1883.0
+margin_right = 1899.0
 margin_bottom = 1056.0
+
+[node name="SquirrelButton" type="Button" parent="SquirrelArea"]
+margin_right = 239.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 239, 332 )
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 1 )
+text = "松鼠s：0"
 
 [node name="EnemyInfo" type="VBoxContainer" parent="."]
 margin_left = 1518.0
@@ -125,4 +143,30 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = ExtResource( 1 )
 text = "松鼠量：0"
+valign = 1
+
+[node name="Panel" type="VBoxContainer" parent="."]
+margin_left = 14.0
+margin_top = 17.0
+margin_right = 465.0
+margin_bottom = 669.0
+theme = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Panel"]
+margin_right = 451.0
+margin_bottom = 28.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "状态栏"
+align = 1
+valign = 1
+
+[node name="NetStatus" type="Label" parent="Panel"]
+margin_top = 32.0
+margin_right = 451.0
+margin_bottom = 60.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "已连接到服务器"
+align = 1
 valign = 1
